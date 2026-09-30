@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: linear-gradient(0deg, #abbcee 0%, #14324f 100%);
+    --bg-accent: linear-gradient(180deg, #1362a2 0%, #c8d3d6 100%);
+
+    --border-accent: 1px solid #00000040;
+    --shadow-accent: 0 10px 25px -3px #1362a240, 0 4px 6px -4px #1362a21a;
+    --radius-accent: 1rem;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.25rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+.app {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--bg);
+}
+
+.dashboard-main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main {
+    width: 100%;
+    min-width: 15rem;
+    min-height: 25rem;
+    background: var(--bg-accent);
+    box-shadow: var(--shadow-accent);
+    border-radius: var(--radius-accent);
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.todo-header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-header-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.todo-header-info-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.fa-solid {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.todo-currentDate {
+    font-size: 0.8rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.todo-title {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1;
+}
+
+.todo-header-status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.todo-header-status-completed {
+    display: flex; /* Transformăm paragraful în flex container */
+    flex-direction: column; /* Punem textul principal și span-ul unul sub altul */
+    align-items: flex-end; /* Aliniază textul la dreapta */
+    font-size: 0.8rem;
+}
+
+.todo-count {
+    font-size: 1.2rem;
+}
+
+.todo-task {
+    width: 100%;
+    height: 100%;
+}
+
+.todo-task-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-input {
+    width: 100%;
+    height: 100%;
+    padding: 0.6rem;
+}
+
+.btn-add {
+    margin-left: 1rem;
+    padding: 0.54rem;
+    cursor: pointer;
+}
+
+.todo-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.todo-list-content {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1362a2;
+    padding: 0.4rem;
+}
+
+.todo-list-content i {
+    font-size: 1rem;
+    cursor: pointer;
+    border: var(--border-accent);
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+.todo-list-comment {
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.dashboard-footer {
+    width: 100%;
+}
+
+.description-footer {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1;
+}
